@@ -2,3 +2,19 @@
 //
 // The variables you want to modify
 // $font-size-root: 20px;
+
+:root {
+    // Light theme colors
+    --color-primary: #3f51b5;
+    --color-secondary: #f44336;
+    --color-text: #000;
+    --color-background: #fff;
+  }
+  
+  .dark-theme {
+    // Dark theme colors
+    --color-primary: #3f51b5;
+    --color-secondary: #f44336;
+    --color-text: #fff;
+    --color-background: #121212;
+  }

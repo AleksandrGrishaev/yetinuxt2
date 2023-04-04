@@ -38,28 +38,65 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    'nuxt-i18n',
   ],
+ 
+  i18n: {
+    locales: [
+      { code: 'en', iso: 'en-US', file: 'en-US.js', name: 'English' },
+      { code: 'ru', iso: 'ru', file: 'ru.js', name: 'Русский' },
+      // ...more locales
+    ],
+    defaultLocale: 'en',
+    lazy: true,
+    langDir: 'lang/',
+    vueI18n: {
+      fallbackLocale: 'en',
+    },
+  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
-    customVariables: ['~/assets/variables.scss'],
-    theme: {
-      dark: true,
-      themes: {
-        dark: {
-          primary: colors.blue.darken2,
-          accent: colors.grey.darken3,
-          secondary: colors.amber.darken3,
-          info: colors.teal.lighten1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          success: colors.green.accent3
-        }
+    vuetify: {
+      customVariables: ['~/assets/variables.scss'],
+      theme: {
+        options: {
+          customProperties: true,
+        },
+        dark: true,
+        themes: {
+          light: {
+            primary: 'var(--color-primary)',
+            accent: 'var(--color-accent)',
+            secondary: 'var(--color-secondary)',
+            info: 'var(--color-info)',
+            warning: 'var(--color-warning)',
+            error: 'var(--color-error)',
+            success: 'var(--color-success)',
+            text: 'var(--color-text)',
+            background: 'var(--color-background)',
+          },
+          dark: {
+            primary: 'var(--color-primary)',
+            accent: 'var(--color-accent)',
+            secondary: 'var(--color-secondary)',
+            info: 'var(--color-info)',
+            warning: 'var(--color-warning)',
+            error: 'var(--color-error)',
+            success: 'var(--color-success)',
+            text: 'var(--color-text)',
+            background: 'var(--color-background)',
+          },
+        },
+      },
+    },
       }
     }
-  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
-}
+  
+  
+
+ 
