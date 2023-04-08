@@ -1,18 +1,25 @@
 <template>
-  <div>
-    <v-app>
-  <Switcher />
-  <ToogleTheme />
-      <p>{{ $t('welcome') }}</p>
-  <Nuxt />
-  <Footer />
-    </v-app>
-  </div>
-
+  <v-app>
+    <Header />
+    <v-main>
+      <BodyStart />
+    </v-main>
+    <Footer />
+  </v-app>
 </template>
 
 <script>
+import Header from '~/components/Header.vue'
+import BodyStart from '~/components/BodyStart.vue'
+import Footer from '~/components/Footer.vue'
+
 export default {
-  name: 'DefaultLayout',
+  components: {
+    Header,
+    BodyStart,
+    Footer
+  }
 }
 </script>
+
+
