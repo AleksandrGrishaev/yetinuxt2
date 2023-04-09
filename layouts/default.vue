@@ -9,8 +9,8 @@
 
     <!-- Sizes your content based upon application components -->
     <v-main>
-      <Layout />
-      <!-- <BodyStart /> -->
+      <!-- <Layout /> -->
+      <BodyStart />
     </v-main>
 
     <Footer />
