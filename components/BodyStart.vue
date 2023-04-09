@@ -1,7 +1,7 @@
 <template>
-  <v-container>
-    <v-row>
-      <v-col cols="12" md="6" lg="8">
+  <v-container class="pt-4">
+    <v-row no-gutters>
+      <v-col cols="12" md="8">
         <h1 class="text-h1 mb-2">{{ $t("BodyStartTitle") }}</h1>
         <h3 class="text-h2 mb-2">{{ $t("BodyStartSubtitle") }}</h3>
         <v-list>
@@ -26,8 +26,8 @@
           $t("BodyStartButton2")
         }}</v-btn>
       </v-col>
-      <v-col cols="12" md="6" lg="4">
-        <v-img src="/yeti.png"></v-img>
+      <v-col cols="12" md="4">
+        <YetiCard />
       </v-col>
     </v-row>
   </v-container>

@@ -1,5 +1,6 @@
 export default {
-  name: "Yeti on Everest",
+  name1: "Yeti",
+  name2: " on Everest",
   headerButton1: "Button 1",
   headerButton2: "Button 2",
   headerButton3: "Button 3",
